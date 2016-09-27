@@ -8,7 +8,6 @@
 
 #import "AppDelegate.h"
 
-#import "TabBarViewController.h"
 #import "LeftSortsViewController.h"
 @interface AppDelegate ()
 
@@ -22,12 +21,12 @@
     self.window.backgroundColor = [UIColor whiteColor];   //设置通用背景颜色
     [self.window makeKeyAndVisible];
     
-    TabBarViewController *mainVC = [[TabBarViewController alloc] init];
+    self.tabbarVC = [[TabBarViewController alloc] init];
 //    self.mainNavigationController = [[UINavigationController alloc] initWithRootViewController:mainVC];
     
     LeftSortsViewController *leftVC = [[LeftSortsViewController alloc] init];
     
-    self.LeftSlideVC = [[LeftSlideViewController alloc] initWithLeftView:leftVC andMainView: mainVC];
+    self.LeftSlideVC = [[LeftSlideViewController alloc] initWithLeftView:leftVC andMainView: self.tabbarVC];
     self.window.rootViewController = self.LeftSlideVC;
     
      return YES;

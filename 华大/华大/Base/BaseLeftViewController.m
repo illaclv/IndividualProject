@@ -7,7 +7,7 @@
 //
 
 #import "BaseLeftViewController.h"
-
+#import "AppDelegate.h"
 @implementation BaseLeftViewController
 
 - (void)viewDidLoad {
@@ -49,6 +49,7 @@
         UIBarButtonItem *imageItem = [[UIBarButtonItem alloc]initWithImage:image style:UIBarButtonItemStylePlain target:self action:@selector(backBarButtonPressed:)];
         self.navigationItem.leftBarButtonItem = imageItem ;
         
+        
     }  else{
         //主界面的导航栏
         
@@ -58,6 +59,8 @@
         [menuBtn addTarget:self action:@selector(dissmissVC) forControlEvents:UIControlEventTouchUpInside];
         self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:menuBtn];
     }
+    //关闭侧滑
+    [self setPanEnabled:NO];
     
 }
 //重写self.view的方法，开始点击
@@ -83,14 +86,12 @@
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
-
-//- (void)viewWillDisappear:(BOOL)animated
-//{
-//    [super viewWillDisappear:animated];
-//    NSLog(@"viewWillDisappear");
-//    AppDelegate *tempAppDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
-//    [tempAppDelegate.LeftSlideVC setPanEnabled:NO];
-//}
+//开启、关闭侧滑
+- (void)setPanEnabled:(BOOL)pan
+{
+    AppDelegate *tempAppDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+    [tempAppDelegate.LeftSlideVC setPanEnabled:pan];
+}
 //
 //- (void)viewWillAppear:(BOOL)animated
 //{

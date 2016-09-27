@@ -8,13 +8,15 @@
 
 #import <UIKit/UIKit.h>
 #import "LeftSlideViewController.h"
+#import "TabBarViewController.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
 @property (strong, nonatomic) LeftSlideViewController *LeftSlideVC;
-@property (strong, nonatomic) UINavigationController *mainNavigationController;
+//@property (strong, nonatomic) UINavigationController *mainNavigationController;
+@property (strong, nonatomic) TabBarViewController *tabbarVC;
 
 @end
 

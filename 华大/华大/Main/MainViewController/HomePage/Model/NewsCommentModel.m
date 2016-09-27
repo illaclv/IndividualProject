@@ -9,5 +9,9 @@
 #import "NewsCommentModel.h"
 
 @implementation NewsCommentModel
-
-@end
++ (NSDictionary *)mj_replacedKeyFromPropertyName
+{
+    return @{
+             @"ID" : @"id"
+             };
+}@end

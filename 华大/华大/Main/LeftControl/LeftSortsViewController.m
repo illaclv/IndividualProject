@@ -107,44 +107,38 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    AppDelegate *tempAppDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
-    [tempAppDelegate.LeftSlideVC openLeftViewWithAnimated:NO];//打开左侧抽屉
-    if (indexPath.row==1) {
-        TestViewController *test=[[TestViewController alloc]init];
-        UINavigationController *nacv = [[UINavigationController alloc]initWithRootViewController:test];
-        nacv.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
-        [self presentViewController:nacv animated:YES completion:nil];
-    }else{
 
-
-    otherViewController *vc = [[otherViewController alloc] init];
-    //    [tempAppDelegate.mainNavigationController pushViewController:vc animated:NO];
-    UINavigationController *nacv = [[UINavigationController alloc]initWithRootViewController:vc];
-    nacv.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
-    [self presentViewController:nacv animated:YES completion:nil];
-
+    if(indexPath.row == 0) {
+        //跳转通知界面
+        [self changeTabbarIndex:0];
+    }else if (indexPath.row == 1){
+        //跳转新闻界面
+        [self changeTabbarIndex:1];
+    }else if (indexPath.row == 3){
+        
     }
     
-    
-//    CATransition *animation = [CATransition animation];
-//    animation.duration = 0.2;
-//    animation.timingFunction = UIViewAnimationCurveEaseInOut;
-////    animation.type = @"pageCurl";
-//    animation.type = kCATransitionPush;
-//    animation.subtype = kCATransitionFromRight;
-//    [self.view.window.layer addAnimation:animation forKey:nil];
-//    [self presentViewController:nacv animated:YES completion:nil];
-    
-    
-    
-    
-//    if(indexPath.row == 1) {
- 
-//    }else if (indexPath.row == 2){
+//    AppDelegate *tempAppDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+//    [tempAppDelegate.LeftSlideVC openLeftViewWithAnimated:NO];//打开左侧抽屉
+//    if (indexPath.row==1) {
+//        TestViewController *test=[[TestViewController alloc]init];
+//        UINavigationController *nacv = [[UINavigationController alloc]initWithRootViewController:test];
+//        nacv.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
+//        [self presentViewController:nacv animated:YES completion:nil];
+//    }else{
 //
-//    }else if (indexPath.row == 3){
-//        
+//
+//    otherViewController *vc = [[otherViewController alloc] init];
+//    //    [tempAppDelegate.mainNavigationController pushViewController:vc animated:NO];
+//    UINavigationController *nacv = [[UINavigationController alloc]initWithRootViewController:vc];
+//    nacv.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
+//    [self presentViewController:nacv animated:YES completion:nil];
+//
 //    }
+    
+    
+    
+
 }
 
 
@@ -209,6 +203,15 @@
     }else if (sender.tag == 102){
         NSLog(@"搜索");
     }
+}
+#pragma mark - 跳转到通知、新闻界面
+
+-(void)changeTabbarIndex:(NSInteger)index{
+    AppDelegate *tempAppDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+    //回到首页界面
+    tempAppDelegate.tabbarVC.selectedIndex = index;
+    [tempAppDelegate.LeftSlideVC closeLeftViewWithAnimated:YES];
+    
 }
 
 @end

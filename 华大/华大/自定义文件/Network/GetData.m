@@ -94,8 +94,9 @@
                       
                       
                       if (success) {
-                          success(responseObject);
                           NSLog (@"%@",responseObject);
+
+                          success(responseObject);
 
                       }
                       

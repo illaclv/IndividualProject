@@ -18,6 +18,7 @@
 @property(nonatomic,strong)UILabel *timeLabel;
 @property(nonatomic,strong)UIImageView *imageView;
 
+@property(nonatomic,strong)UILabel *commentLabel;
 
 
 @property(nonatomic,strong)UILabel *mainLabel;
@@ -51,12 +52,13 @@
     //        imageview3.userInteractionEnabled  =NO;
     
     UILabel *lable3 = [[UILabel alloc]init];
-    lable3.text = @"(12)";
+    lable3.text = @"(0)";
     lable3.frame = CGRectMake( 3+14+3,14, width, 16);
     lable3.textColor = KColor(102, 102, 102);
-    lable3.font = [UIFont systemFontOfSize:12];
+    lable3.font = [UIFont systemFontOfSize:14];
     lable3.textAlignment = NSTextAlignmentCenter;
     [butr addSubview:lable3];
+    self.commentLabel = lable3;
     
     
 
@@ -159,6 +161,9 @@
     self.mainLabel.frame = CGRectMake(8,  CGRectGetMaxY(self.imageView.frame),KScreenWidth-16, mainL.height);
     
     self.mainScrollerView.contentSize = CGSizeMake(KScreenWidth, CGRectGetMaxY(self.mainLabel.frame));
+    
+    //右上角的评论数
+    self.commentLabel.text = [NSString stringWithFormat:@"(%@)",self.mainModel.pinglunnum];
     
 }
 

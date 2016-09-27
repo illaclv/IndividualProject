@@ -11,5 +11,6 @@
 
 @interface NewsCommentTableViewCell : UITableViewCell
 @property(nonatomic,strong)NewsCommentModel *model;
+@property(nonatomic,copy) NSString *newsID;
 
 @end

@@ -7,6 +7,7 @@
 //
 
 #import "LoginViewController.h"
+#import "AppDelegate.h"
 @interface LoginViewController()
 @property(nonatomic,strong)UITextField *phoneTextField;
 @property(nonatomic,strong)UITextField *passwordTextField;
@@ -43,19 +44,24 @@
     
     
     UIButton *right = [UIButton buttonWithType:UIButtonTypeCustom];
-    right.frame = CGRectMake(0, 0, 90, 45);
-    [right setImage:[UIImage imageNamed:@"华大"] forState:UIControlStateNormal];
-    right.userInteractionEnabled = NO;
-    right.imageEdgeInsets = UIEdgeInsetsMake(0, 0, 0, -28);
+    right.frame = CGRectMake(0, 0, 45, 45);
+    [right setImage:[UIImage imageNamed:@"ld-you"] forState:UIControlStateNormal];
+    right.imageEdgeInsets = UIEdgeInsetsMake(0, 0, 0, 0);
+    [right addTarget:self action:@selector(backToHome) forControlEvents:UIControlEventTouchUpInside];
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:right];
 }
 
 -(void)initUI{
+    
+    
+    
     UIImageView *imageView = [[UIImageView alloc]initWithImage: [UIImage imageNamed:@"华大白"]];
     imageView.frame = CGRectMake(KScreenWidth*0.5-25,100, 51, 51);
     [self.view addSubview:imageView];
     
-
+    UIImageView *ldbg = [[UIImageView alloc]initWithImage: [UIImage imageNamed:@"dl-bg"]];
+    ldbg.frame = CGRectMake(0,kScreenHeight-KScreenWidth*0.52, KScreenWidth, KScreenWidth*0.52);
+    [self.view addSubview:ldbg];
     
     UITextField *phoneTextField = [[UITextField alloc]init];
     phoneTextField.frame = CGRectMake(KScreenWidth*0.2,0.33*kScreenHeight,KScreenWidth*0.6, 40);
@@ -67,6 +73,8 @@
     phoneTextField.layer.borderWidth = 1.0;
     phoneTextField.layer.borderColor =  [UIColor getColor:@"#02568b"].CGColor;
     [self.view addSubview:phoneTextField];
+    self.phoneTextField = phoneTextField;
+    
 
     UIImageView *headImage1 = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"iconfont-log-lianxiren"]];
     headImage1.contentMode = UIViewContentModeCenter;
@@ -84,6 +92,7 @@
     passwordTextField.layer.borderWidth = 1.0;
     passwordTextField.layer.borderColor =  [UIColor getColor:@"#02568b"].CGColor;
     [self.view addSubview:passwordTextField];
+    self.passwordTextField = passwordTextField;
     
     UIImageView *headImage2 = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"iconfont-log-mima"]];
     headImage2.contentMode = UIViewContentModeCenter;
@@ -130,25 +139,52 @@
                        file:nil
                     success:^(id data) {
                         
+
+                        NSString *aaa = data[@"status"][@"succeed"] ;
+                        NSLog( @"%@",aaa);
+                        if ([data[@"status"][@"succeed"] isKindOfClass:[NSNumber class]]) {
+                            if ([data[@"status"][@"succeed"]   isEqual: @(1)]) {
+                                NSDictionary *dataGet = [data objectForKey:@"data"];
+                                NSDictionary *user = [dataGet objectForKey:@"session"];
+
+                                [[NSUserDefaults standardUserDefaults]setObject:user forKey:@"user"];
+                                //返回
+                                [self dismissViewControllerAnimated:YES completion:nil];
+                            }else{
+                                //账号密码错误
+                            }
+                       
+
+                        }else{
+                            
+                        }
                         
                     }
-                       fail:^(NSError *error) {
+                        fail:^(NSError *error) {
                        }];
     }else{
-        NSLog(@"输入账号");
+                NSLog(@"输入账号");
     }
     
   
 
 }
 -(void)forget:(UIButton *)sender{
-    
+   
 }
 
 //返回
 - (void) dissmissVC
 {
     [self dismissViewControllerAnimated:YES completion:nil];
+}
+-(void)backToHome{
+    AppDelegate *tempAppDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+    //回到首页界面
+    tempAppDelegate.tabbarVC.selectedIndex = 2;
+    [tempAppDelegate.LeftSlideVC closeLeftViewWithAnimated:NO];
+    [self dismissViewControllerAnimated:YES completion:nil];
+
 }
 //重写self.view的方法，开始点击
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {

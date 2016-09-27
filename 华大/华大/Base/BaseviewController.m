@@ -53,6 +53,8 @@
         
         UIBarButtonItem *imageItem = [[UIBarButtonItem alloc]initWithImage:image style:UIBarButtonItemStylePlain target:self action:@selector(backBarButtonPressed:)];
         self.navigationItem.leftBarButtonItem = imageItem ;
+        //关闭侧滑
+        [self setPanEnabled:NO];
 
     }  else{
         //主界面的导航栏
@@ -71,6 +73,8 @@
         menuBtn2.userInteractionEnabled = NO;
         menuBtn2.imageEdgeInsets = UIEdgeInsetsMake(0, 0, 0, -28);
          self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:menuBtn2];
+        //打开侧滑
+        [self setPanEnabled:YES];
     }
     
     
@@ -112,21 +116,28 @@
 }
 
 
-- (void)viewWillDisappear:(BOOL)animated
+//开启、关闭侧滑
+- (void)setPanEnabled:(BOOL)pan
 {
-    [super viewWillDisappear:animated];
-    NSLog(@"viewWillDisappear");
     AppDelegate *tempAppDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
-    [tempAppDelegate.LeftSlideVC setPanEnabled:NO];
+    [tempAppDelegate.LeftSlideVC setPanEnabled:pan];
 }
 
-- (void)viewWillAppear:(BOOL)animated
-{
-    [super viewWillAppear:animated];
-    NSLog(@"viewWillAppear");
-    AppDelegate *tempAppDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
-    [tempAppDelegate.LeftSlideVC setPanEnabled:YES];
-}
+//- (void)viewWillDisappear:(BOOL)animated
+//{
+//    [super viewWillDisappear:animated];
+//    NSLog(@"viewWillDisappear");
+//    AppDelegate *tempAppDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+//    [tempAppDelegate.LeftSlideVC setPanEnabled:NO];
+//}
+//
+//- (void)viewWillAppear:(BOOL)animated
+//{
+//    [super viewWillAppear:animated];
+//    NSLog(@"viewWillAppear");
+//    AppDelegate *tempAppDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+//    [tempAppDelegate.LeftSlideVC setPanEnabled:YES];
+//}
 
 
 

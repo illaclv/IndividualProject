@@ -9,5 +9,12 @@
 #import <Foundation/Foundation.h>
 
 @interface NewsCommentModel : NSObject
+@property(nonatomic,strong)NSString *addtime;
+@property(nonatomic,strong)NSString *comment_name;
+@property(nonatomic,strong)NSString *comment_praise;
+@property(nonatomic,strong)NSString *comment_text;
+@property(nonatomic,strong)NSString *ID;
+@property(nonatomic,strong)NSString *user_id;
+
 
 @end

@@ -162,8 +162,11 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    HomePageModel *model = self.mainArray[indexPath.row];
 
     NewsDetailViewController *news = [[NewsDetailViewController alloc]init];
+    news.newsID = model.newid;
     news.hidesBottomBarWhenPushed = YES;    //用来隐藏标签栏
     [self.navigationController pushViewController:news animated:YES];
 }
