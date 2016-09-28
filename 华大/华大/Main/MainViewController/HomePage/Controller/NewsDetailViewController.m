@@ -37,7 +37,7 @@
 
 #pragma mark - 右边
 -(void)rightButton{
-     CGFloat width = [self sizeWithText:@"(12)" font:[UIFont systemFontOfSize:12] maxW:MAXFLOAT].width;
+    CGFloat width = [self sizeWithText:@"(12)" font:[UIFont systemFontOfSize:12] maxW:MAXFLOAT].width;
     
     UIButton *butr = [UIButton buttonWithType:UIButtonTypeCustom];
     butr.frame = CGRectMake(0, 0, 14+width+6+3, 44);

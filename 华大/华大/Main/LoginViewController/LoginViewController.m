@@ -8,6 +8,7 @@
 
 #import "LoginViewController.h"
 #import "AppDelegate.h"
+#import "ForgetPasswordViewController.h"
 @interface LoginViewController()
 @property(nonatomic,strong)UITextField *phoneTextField;
 @property(nonatomic,strong)UITextField *passwordTextField;
@@ -170,7 +171,8 @@
 
 }
 -(void)forget:(UIButton *)sender{
-   
+    ForgetPasswordViewController *forget = [[ForgetPasswordViewController alloc]init];
+    [self.navigationController pushViewController:forget animated:YES];
 }
 
 //返回
@@ -190,8 +192,7 @@
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     
     UITouch *touch = [touches anyObject];
-    NSLog(@"touch = %@",touch.view);
-    //重写方法的时候要注意一个问题
+     //重写方法的时候要注意一个问题
     [super touchesBegan:touches withEvent:event];
     //结束编辑，隐藏键盘
     [self.view endEditing:YES];

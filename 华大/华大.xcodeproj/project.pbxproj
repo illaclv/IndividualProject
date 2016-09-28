@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0415327D1D87DB6900E3E59C /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0415327C1D87DB6900E3E59C /* TestViewController.m */; };
 		04A6E8321D82858F0056E8CE /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04A6E8181D82858F0056E8CE /* Info.plist */; };
 		04A6E8331D82858F0056E8CE /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A6E81A1D82858F0056E8CE /* MASCompositeConstraint.m */; };
 		04A6E8341D82858F0056E8CE /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A6E81D1D82858F0056E8CE /* MASConstraint.m */; };
@@ -214,14 +213,23 @@
 		CF9C71ED1D825BCB00FDC95A /* NewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF9C71EC1D825BCB00FDC95A /* NewsViewController.m */; };
 		CF9C71F31D82648C00FDC95A /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF9C71F21D82648C00FDC95A /* MineViewController.m */; };
 		CFBDC3DD1D83A87900821FDD /* other2.m in Sources */ = {isa = PBXBuildFile; fileRef = CFBDC3DC1D83A87900821FDD /* other2.m */; };
+		CFC390D91D9B7ABC00BB0911 /* ForgetPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC390D81D9B7ABC00BB0911 /* ForgetPasswordViewController.m */; };
+		CFC391001D9BCD2D00BB0911 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC390E51D9BCD2D00BB0911 /* TestViewController.m */; };
+		CFC391031D9BCD6400BB0911 /* CalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC391021D9BCD6400BB0911 /* CalendarViewController.m */; };
+		CFC391061D9BCD7400BB0911 /* CertificateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC391051D9BCD7400BB0911 /* CertificateViewController.m */; };
+		CFC391091D9BCDA200BB0911 /* ProveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC391081D9BCDA200BB0911 /* ProveViewController.m */; };
+		CFC3910C1D9BCDB300BB0911 /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC3910B1D9BCDB300BB0911 /* SearchViewController.m */; };
+		CFC3910F1D9BCDC300BB0911 /* ServiceHallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC3910E1D9BCDC300BB0911 /* ServiceHallViewController.m */; };
+		CFC391121D9BCDD200BB0911 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC391111D9BCDD200BB0911 /* SettingViewController.m */; };
+		CFC391151D9BCDE400BB0911 /* StudentsQueryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC391141D9BCDE400BB0911 /* StudentsQueryViewController.m */; };
+		CFC391181D9BCDF500BB0911 /* YellowPagesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC391171D9BCDF500BB0911 /* YellowPagesViewController.m */; };
+		CFC3911F1D9BCF6800BB0911 /* LeaveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC3911E1D9BCF6800BB0911 /* LeaveViewController.m */; };
 		CFC62F8D1D94DB2600AEF388 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC62F8C1D94DB2600AEF388 /* LoginViewController.m */; };
 		CFD7D8331D87AFF000FE627C /* HomePageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CFD7D8321D87AFF000FE627C /* HomePageModel.m */; };
 		CFF031C31D9668E90058F362 /* NewsDetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CFF031C21D9668E90058F362 /* NewsDetailModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0415327B1D87DB6900E3E59C /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TestViewController.h; path = "华大/Main/LeftSIdeViewController/Notice/TestViewController.h"; sourceTree = SOURCE_ROOT; };
-		0415327C1D87DB6900E3E59C /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TestViewController.m; path = "华大/Main/LeftSIdeViewController/Notice/TestViewController.m"; sourceTree = SOURCE_ROOT; };
 		04A6E8181D82858F0056E8CE /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04A6E8191D82858F0056E8CE /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
 		04A6E81A1D82858F0056E8CE /* MASCompositeConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASCompositeConstraint.m; sourceTree = "<group>"; };
@@ -625,6 +633,28 @@
 		CF9C71F21D82648C00FDC95A /* MineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
 		CFBDC3DB1D83A87900821FDD /* other2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = other2.h; sourceTree = "<group>"; };
 		CFBDC3DC1D83A87900821FDD /* other2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = other2.m; sourceTree = "<group>"; };
+		CFC390D71D9B7ABC00BB0911 /* ForgetPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForgetPasswordViewController.h; sourceTree = "<group>"; };
+		CFC390D81D9B7ABC00BB0911 /* ForgetPasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForgetPasswordViewController.m; sourceTree = "<group>"; };
+		CFC390E41D9BCD2D00BB0911 /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
+		CFC390E51D9BCD2D00BB0911 /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
+		CFC391011D9BCD6400BB0911 /* CalendarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarViewController.h; sourceTree = "<group>"; };
+		CFC391021D9BCD6400BB0911 /* CalendarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarViewController.m; sourceTree = "<group>"; };
+		CFC391041D9BCD7400BB0911 /* CertificateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CertificateViewController.h; sourceTree = "<group>"; };
+		CFC391051D9BCD7400BB0911 /* CertificateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CertificateViewController.m; sourceTree = "<group>"; };
+		CFC391071D9BCDA200BB0911 /* ProveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProveViewController.h; sourceTree = "<group>"; };
+		CFC391081D9BCDA200BB0911 /* ProveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProveViewController.m; sourceTree = "<group>"; };
+		CFC3910A1D9BCDB300BB0911 /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
+		CFC3910B1D9BCDB300BB0911 /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
+		CFC3910D1D9BCDC300BB0911 /* ServiceHallViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServiceHallViewController.h; sourceTree = "<group>"; };
+		CFC3910E1D9BCDC300BB0911 /* ServiceHallViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServiceHallViewController.m; sourceTree = "<group>"; };
+		CFC391101D9BCDD200BB0911 /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
+		CFC391111D9BCDD200BB0911 /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
+		CFC391131D9BCDE400BB0911 /* StudentsQueryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StudentsQueryViewController.h; sourceTree = "<group>"; };
+		CFC391141D9BCDE400BB0911 /* StudentsQueryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StudentsQueryViewController.m; sourceTree = "<group>"; };
+		CFC391161D9BCDF500BB0911 /* YellowPagesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YellowPagesViewController.h; sourceTree = "<group>"; };
+		CFC391171D9BCDF500BB0911 /* YellowPagesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YellowPagesViewController.m; sourceTree = "<group>"; };
+		CFC3911D1D9BCF6800BB0911 /* LeaveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeaveViewController.h; sourceTree = "<group>"; };
+		CFC3911E1D9BCF6800BB0911 /* LeaveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeaveViewController.m; sourceTree = "<group>"; };
 		CFC62F8B1D94DB2600AEF388 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		CFC62F8C1D94DB2600AEF388 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		CFD7D8311D87AFF000FE627C /* HomePageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePageModel.h; sourceTree = "<group>"; };
@@ -968,234 +998,18 @@
 		CF1CFA221D8256E100FFF45E /* LeftSIdeViewController */ = {
 			isa = PBXGroup;
 			children = (
-				CF1CFA231D8256E100FFF45E /* Calendar */,
-				CF1CFA271D8256E100FFF45E /* News */,
-				CF1CFA2B1D8256E100FFF45E /* Notice */,
-				CF1CFA2F1D8256E100FFF45E /* Search */,
-				CF1CFA331D8256E100FFF45E /* Setting */,
-				CF1CFA371D8256E100FFF45E /* StudentsQuery */,
-				CF1CFA3B1D8256E100FFF45E /* YellowPages */,
+				CFC391191D9BCF5000BB0911 /* Leave */,
+				CFC390DA1D9BCD2D00BB0911 /* Calendar */,
+				CFC390DE1D9BCD2D00BB0911 /* Certificate */,
+				CFC390E21D9BCD2D00BB0911 /* Notice */,
+				CFC390E81D9BCD2D00BB0911 /* Prove */,
+				CFC390EC1D9BCD2D00BB0911 /* Search */,
+				CFC390F01D9BCD2D00BB0911 /* ServiceHall */,
+				CFC390F41D9BCD2D00BB0911 /* Setting */,
+				CFC390F81D9BCD2D00BB0911 /* StudentsQuery */,
+				CFC390FC1D9BCD2D00BB0911 /* YellowPages */,
 			);
 			path = LeftSIdeViewController;
-			sourceTree = "<group>";
-		};
-		CF1CFA231D8256E100FFF45E /* Calendar */ = {
-			isa = PBXGroup;
-			children = (
-				CF1CFA241D8256E100FFF45E /* Controller */,
-				CF1CFA251D8256E100FFF45E /* Model */,
-				CF1CFA261D8256E100FFF45E /* View */,
-			);
-			path = Calendar;
-			sourceTree = "<group>";
-		};
-		CF1CFA241D8256E100FFF45E /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		CF1CFA251D8256E100FFF45E /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		CF1CFA261D8256E100FFF45E /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		CF1CFA271D8256E100FFF45E /* News */ = {
-			isa = PBXGroup;
-			children = (
-				CF1CFA281D8256E100FFF45E /* Controller */,
-				CF1CFA291D8256E100FFF45E /* Model */,
-				CF1CFA2A1D8256E100FFF45E /* View */,
-			);
-			path = News;
-			sourceTree = "<group>";
-		};
-		CF1CFA281D8256E100FFF45E /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		CF1CFA291D8256E100FFF45E /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		CF1CFA2A1D8256E100FFF45E /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		CF1CFA2B1D8256E100FFF45E /* Notice */ = {
-			isa = PBXGroup;
-			children = (
-				CF1CFA2C1D8256E100FFF45E /* Controller */,
-				CF1CFA2D1D8256E100FFF45E /* Model */,
-				CF1CFA2E1D8256E100FFF45E /* View */,
-			);
-			path = Notice;
-			sourceTree = "<group>";
-		};
-		CF1CFA2C1D8256E100FFF45E /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				0415327B1D87DB6900E3E59C /* TestViewController.h */,
-				0415327C1D87DB6900E3E59C /* TestViewController.m */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		CF1CFA2D1D8256E100FFF45E /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		CF1CFA2E1D8256E100FFF45E /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		CF1CFA2F1D8256E100FFF45E /* Search */ = {
-			isa = PBXGroup;
-			children = (
-				CF1CFA301D8256E100FFF45E /* Controller */,
-				CF1CFA311D8256E100FFF45E /* Model */,
-				CF1CFA321D8256E100FFF45E /* View */,
-			);
-			path = Search;
-			sourceTree = "<group>";
-		};
-		CF1CFA301D8256E100FFF45E /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		CF1CFA311D8256E100FFF45E /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		CF1CFA321D8256E100FFF45E /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		CF1CFA331D8256E100FFF45E /* Setting */ = {
-			isa = PBXGroup;
-			children = (
-				CF1CFA341D8256E100FFF45E /* Controller */,
-				CF1CFA351D8256E100FFF45E /* Model */,
-				CF1CFA361D8256E100FFF45E /* View */,
-			);
-			path = Setting;
-			sourceTree = "<group>";
-		};
-		CF1CFA341D8256E100FFF45E /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		CF1CFA351D8256E100FFF45E /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		CF1CFA361D8256E100FFF45E /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		CF1CFA371D8256E100FFF45E /* StudentsQuery */ = {
-			isa = PBXGroup;
-			children = (
-				CF1CFA381D8256E100FFF45E /* Controller */,
-				CF1CFA391D8256E100FFF45E /* Model */,
-				CF1CFA3A1D8256E100FFF45E /* View */,
-			);
-			path = StudentsQuery;
-			sourceTree = "<group>";
-		};
-		CF1CFA381D8256E100FFF45E /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		CF1CFA391D8256E100FFF45E /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		CF1CFA3A1D8256E100FFF45E /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		CF1CFA3B1D8256E100FFF45E /* YellowPages */ = {
-			isa = PBXGroup;
-			children = (
-				CF1CFA3C1D8256E100FFF45E /* Controller */,
-				CF1CFA3D1D8256E100FFF45E /* Model */,
-				CF1CFA3E1D8256E100FFF45E /* View */,
-			);
-			path = YellowPages;
-			sourceTree = "<group>";
-		};
-		CF1CFA3C1D8256E100FFF45E /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		CF1CFA3D1D8256E100FFF45E /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		CF1CFA3E1D8256E100FFF45E /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		CF1CFA3F1D8256E100FFF45E /* MainViewController */ = {
@@ -1831,11 +1645,343 @@
 			path = TabBar;
 			sourceTree = "<group>";
 		};
+		CFC390DA1D9BCD2D00BB0911 /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				CFC390DD1D9BCD2D00BB0911 /* ViewController */,
+				CFC390DB1D9BCD2D00BB0911 /* Model */,
+				CFC390DC1D9BCD2D00BB0911 /* View */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
+		CFC390DB1D9BCD2D00BB0911 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CFC390DC1D9BCD2D00BB0911 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CFC390DD1D9BCD2D00BB0911 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CFC391011D9BCD6400BB0911 /* CalendarViewController.h */,
+				CFC391021D9BCD6400BB0911 /* CalendarViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		CFC390DE1D9BCD2D00BB0911 /* Certificate */ = {
+			isa = PBXGroup;
+			children = (
+				CFC390E11D9BCD2D00BB0911 /* ViewController */,
+				CFC390DF1D9BCD2D00BB0911 /* Model */,
+				CFC390E01D9BCD2D00BB0911 /* View */,
+			);
+			path = Certificate;
+			sourceTree = "<group>";
+		};
+		CFC390DF1D9BCD2D00BB0911 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CFC390E01D9BCD2D00BB0911 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CFC390E11D9BCD2D00BB0911 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CFC391041D9BCD7400BB0911 /* CertificateViewController.h */,
+				CFC391051D9BCD7400BB0911 /* CertificateViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		CFC390E21D9BCD2D00BB0911 /* Notice */ = {
+			isa = PBXGroup;
+			children = (
+				CFC390E31D9BCD2D00BB0911 /* Model */,
+				CFC390E41D9BCD2D00BB0911 /* TestViewController.h */,
+				CFC390E51D9BCD2D00BB0911 /* TestViewController.m */,
+				CFC390E61D9BCD2D00BB0911 /* View */,
+				CFC390E71D9BCD2D00BB0911 /* ViewController */,
+			);
+			path = Notice;
+			sourceTree = "<group>";
+		};
+		CFC390E31D9BCD2D00BB0911 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CFC390E61D9BCD2D00BB0911 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CFC390E71D9BCD2D00BB0911 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		CFC390E81D9BCD2D00BB0911 /* Prove */ = {
+			isa = PBXGroup;
+			children = (
+				CFC390E91D9BCD2D00BB0911 /* Model */,
+				CFC390EA1D9BCD2D00BB0911 /* View */,
+				CFC390EB1D9BCD2D00BB0911 /* ViewController */,
+			);
+			path = Prove;
+			sourceTree = "<group>";
+		};
+		CFC390E91D9BCD2D00BB0911 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CFC391071D9BCDA200BB0911 /* ProveViewController.h */,
+				CFC391081D9BCDA200BB0911 /* ProveViewController.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CFC390EA1D9BCD2D00BB0911 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CFC390EB1D9BCD2D00BB0911 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		CFC390EC1D9BCD2D00BB0911 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				CFC390EF1D9BCD2D00BB0911 /* ViewController */,
+				CFC390ED1D9BCD2D00BB0911 /* Model */,
+				CFC390EE1D9BCD2D00BB0911 /* View */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		CFC390ED1D9BCD2D00BB0911 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CFC390EE1D9BCD2D00BB0911 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CFC390EF1D9BCD2D00BB0911 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CFC3910A1D9BCDB300BB0911 /* SearchViewController.h */,
+				CFC3910B1D9BCDB300BB0911 /* SearchViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		CFC390F01D9BCD2D00BB0911 /* ServiceHall */ = {
+			isa = PBXGroup;
+			children = (
+				CFC390F31D9BCD2D00BB0911 /* ViewController */,
+				CFC390F11D9BCD2D00BB0911 /* Model */,
+				CFC390F21D9BCD2D00BB0911 /* View */,
+			);
+			path = ServiceHall;
+			sourceTree = "<group>";
+		};
+		CFC390F11D9BCD2D00BB0911 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CFC390F21D9BCD2D00BB0911 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CFC390F31D9BCD2D00BB0911 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CFC3910D1D9BCDC300BB0911 /* ServiceHallViewController.h */,
+				CFC3910E1D9BCDC300BB0911 /* ServiceHallViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		CFC390F41D9BCD2D00BB0911 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				CFC390F71D9BCD2D00BB0911 /* ViewController */,
+				CFC390F51D9BCD2D00BB0911 /* Model */,
+				CFC390F61D9BCD2D00BB0911 /* View */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		CFC390F51D9BCD2D00BB0911 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CFC390F61D9BCD2D00BB0911 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CFC390F71D9BCD2D00BB0911 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CFC391101D9BCDD200BB0911 /* SettingViewController.h */,
+				CFC391111D9BCDD200BB0911 /* SettingViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		CFC390F81D9BCD2D00BB0911 /* StudentsQuery */ = {
+			isa = PBXGroup;
+			children = (
+				CFC390FB1D9BCD2D00BB0911 /* ViewController */,
+				CFC390F91D9BCD2D00BB0911 /* Model */,
+				CFC390FA1D9BCD2D00BB0911 /* View */,
+			);
+			path = StudentsQuery;
+			sourceTree = "<group>";
+		};
+		CFC390F91D9BCD2D00BB0911 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CFC390FA1D9BCD2D00BB0911 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CFC390FB1D9BCD2D00BB0911 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CFC391131D9BCDE400BB0911 /* StudentsQueryViewController.h */,
+				CFC391141D9BCDE400BB0911 /* StudentsQueryViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		CFC390FC1D9BCD2D00BB0911 /* YellowPages */ = {
+			isa = PBXGroup;
+			children = (
+				CFC390FF1D9BCD2D00BB0911 /* ViewController */,
+				CFC390FD1D9BCD2D00BB0911 /* Model */,
+				CFC390FE1D9BCD2D00BB0911 /* View */,
+			);
+			path = YellowPages;
+			sourceTree = "<group>";
+		};
+		CFC390FD1D9BCD2D00BB0911 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CFC390FE1D9BCD2D00BB0911 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CFC390FF1D9BCD2D00BB0911 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CFC391161D9BCDF500BB0911 /* YellowPagesViewController.h */,
+				CFC391171D9BCDF500BB0911 /* YellowPagesViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		CFC391191D9BCF5000BB0911 /* Leave */ = {
+			isa = PBXGroup;
+			children = (
+				CFC3911C1D9BCF5000BB0911 /* ViewController */,
+				CFC3911A1D9BCF5000BB0911 /* Model */,
+				CFC3911B1D9BCF5000BB0911 /* View */,
+			);
+			path = Leave;
+			sourceTree = "<group>";
+		};
+		CFC3911A1D9BCF5000BB0911 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CFC3911B1D9BCF5000BB0911 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CFC3911C1D9BCF5000BB0911 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CFC3911D1D9BCF6800BB0911 /* LeaveViewController.h */,
+				CFC3911E1D9BCF6800BB0911 /* LeaveViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 		CFC62F8A1D94DB0100AEF388 /* LoginViewController */ = {
 			isa = PBXGroup;
 			children = (
 				CFC62F8B1D94DB2600AEF388 /* LoginViewController.h */,
 				CFC62F8C1D94DB2600AEF388 /* LoginViewController.m */,
+				CFC390D71D9B7ABC00BB0911 /* ForgetPasswordViewController.h */,
+				CFC390D81D9B7ABC00BB0911 /* ForgetPasswordViewController.m */,
 			);
 			path = LoginViewController;
 			sourceTree = "<group>";
@@ -1933,6 +2079,7 @@
 			files = (
 				CF28424A1D824D140008BA3C /* MJRefreshStateHeader.m in Sources */,
 				CF8BFCFC1D8647DF004916BF /* UIImage+Category.m in Sources */,
+				CFC390D91D9B7ABC00BB0911 /* ForgetPasswordViewController.m in Sources */,
 				04A6E92B1D8285A40056E8CE /* YYTextArchiver.m in Sources */,
 				04A6E9261D8285A40056E8CE /* YYTextMagnifier.m in Sources */,
 				CF2841621D824CE20008BA3C /* SDWebImageDownloaderOperation.m in Sources */,
@@ -1966,7 +2113,10 @@
 				04A6E9391D8285A40056E8CE /* YYSentinel.m in Sources */,
 				CF2841D71D824D080008BA3C /* AFURLConnectionOperation.m in Sources */,
 				CF28423A1D824D140008BA3C /* NSString+MJExtension.m in Sources */,
+				CFC3910F1D9BCDC300BB0911 /* ServiceHallViewController.m in Sources */,
+				CFC391001D9BCD2D00BB0911 /* TestViewController.m in Sources */,
 				04A6E8341D82858F0056E8CE /* MASConstraint.m in Sources */,
+				CFC391121D9BCDD200BB0911 /* SettingViewController.m in Sources */,
 				04A6E9141D8285A40056E8CE /* UIImageView+YYWebImage.m in Sources */,
 				04A6E9081D8285A40056E8CE /* UIScrollView+YYAdd.m in Sources */,
 				CF2842431D824D140008BA3C /* MJRefreshAutoNormalFooter.m in Sources */,
@@ -1974,6 +2124,7 @@
 				CF8BFCF51D8647DF004916BF /* Customkongjian.m in Sources */,
 				04A6E90E1D8285A40056E8CE /* YYKVStorage.m in Sources */,
 				CF2841631D824CE20008BA3C /* SDWebImageManager.m in Sources */,
+				CFC391181D9BCDF500BB0911 /* YellowPagesViewController.m in Sources */,
 				04A6E91F1D8285A40056E8CE /* YYTextContainerView.m in Sources */,
 				04A6E83B1D82858F0056E8CE /* View+MASAdditions.m in Sources */,
 				CF8BFCFD1D8647DF004916BF /* UINavigationBar+category.m in Sources */,
@@ -1987,6 +2138,7 @@
 				CF2841691D824CE20008BA3C /* UIImageView+WebCache.m in Sources */,
 				CF2840971D824C800008BA3C /* BaseviewController.m in Sources */,
 				04A6E9021D8285A40056E8CE /* UIControl+YYAdd.m in Sources */,
+				CFC391031D9BCD6400BB0911 /* CalendarViewController.m in Sources */,
 				CF28423E1D824D140008BA3C /* MJRefreshBackFooter.m in Sources */,
 				CF2842401D824D140008BA3C /* MJRefreshFooter.m in Sources */,
 				CF28415F1D824CE20008BA3C /* SDWebImageCompat.m in Sources */,
@@ -2047,6 +2199,7 @@
 				04A6E9351D8285A40056E8CE /* YYFileHash.m in Sources */,
 				04A6E92E1D8285A40056E8CE /* YYTextRubyAnnotation.m in Sources */,
 				CF2842391D824D140008BA3C /* NSObject+MJProperty.m in Sources */,
+				CFC391151D9BCDE400BB0911 /* StudentsQueryViewController.m in Sources */,
 				CF2842441D824D140008BA3C /* MJRefreshAutoStateFooter.m in Sources */,
 				CF2842471D824D140008BA3C /* MJRefreshBackStateFooter.m in Sources */,
 				04A6E9341D8285A40056E8CE /* YYDispatchQueuePool.m in Sources */,
@@ -2062,13 +2215,13 @@
 				04A6E92F1D8285A40056E8CE /* YYTextRunDelegate.m in Sources */,
 				CF1CFA611D82597200FFF45E /* otherViewController.m in Sources */,
 				CF1CFA551D82572500FFF45E /* LeftSlideViewController.m in Sources */,
-				0415327D1D87DB6900E3E59C /* TestViewController.m in Sources */,
 				CF2841D41D824D080008BA3C /* AFHTTPSessionManager.m in Sources */,
 				CF2842361D824D140008BA3C /* NSObject+MJClass.m in Sources */,
 				CF2842591D824D1C0008BA3C /* README.mdown in Sources */,
 				04A6E8331D82858F0056E8CE /* MASCompositeConstraint.m in Sources */,
 				CF1CFA141D8253DF00FFF45E /* AppDelegate.m in Sources */,
 				CF748FD51D93DAC1007C2BAA /* HomePageCollectionViewCell.m in Sources */,
+				CFC391061D9BCD7400BB0911 /* CertificateViewController.m in Sources */,
 				04A6E8FC1D8285A40056E8CE /* CALayer+YYAdd.m in Sources */,
 				CF9C71E41D825B0F00FDC95A /* HomePageViewController.m in Sources */,
 				CF9C71EA1D825BB700FDC95A /* NoticeViewController.m in Sources */,
@@ -2089,6 +2242,7 @@
 				04A6E9121D8285A40056E8CE /* MKAnnotationView+YYWebImage.m in Sources */,
 				CFF031C31D9668E90058F362 /* NewsDetailModel.m in Sources */,
 				CF992C821D8268D800F160A3 /* XRCarouselView.m in Sources */,
+				CFC3911F1D9BCF6800BB0911 /* LeaveViewController.m in Sources */,
 				04A6E9191D8285A40056E8CE /* YYImageCoder.m in Sources */,
 				CF2842481D824D140008BA3C /* MJRefreshGifHeader.m in Sources */,
 				CF9C71ED1D825BCB00FDC95A /* NewsViewController.m in Sources */,
@@ -2112,6 +2266,7 @@
 				04A6E90B1D8285A40056E8CE /* UIView+YYAdd.m in Sources */,
 				04A6E9301D8285A40056E8CE /* YYTextUtilities.m in Sources */,
 				04A6E9331D8285A40056E8CE /* YYAsyncLayer.m in Sources */,
+				CFC3910C1D9BCDB300BB0911 /* SearchViewController.m in Sources */,
 				CF2842331D824D140008BA3C /* MJProperty.m in Sources */,
 				04A6E8FE1D8285A40056E8CE /* UIApplication+YYAdd.m in Sources */,
 				CF8BFCF91D8647DF004916BF /* GetData.m in Sources */,
@@ -2121,6 +2276,7 @@
 				04A6E8F11D8285A40056E8CE /* NSDate+YYAdd.m in Sources */,
 				04A6E9221D8285A40056E8CE /* YYTextInput.m in Sources */,
 				04A6E8391D82858F0056E8CE /* NSArray+MASAdditions.m in Sources */,
+				CFC391091D9BCDA200BB0911 /* ProveViewController.m in Sources */,
 				04A6E9031D8285A40056E8CE /* UIDevice+YYAdd.m in Sources */,
 				CF2842321D824D140008BA3C /* MJFoundation.m in Sources */,
 				04A6E8F61D8285A40056E8CE /* NSObject+YYAdd.m in Sources */,
