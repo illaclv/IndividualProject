@@ -12,10 +12,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    //    [self.navigationController.navigationBar setTitleTextAttributes:@{NSFontAttributeName:[UIFont fontWithName:@"Helvetica-Bold" size:18],NSForegroundColorAttributeName:KColo_lineblue}];
-    //    [self.navigationController.navigationBar setTitleTextAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:18],NSForegroundColorAttributeName:KColo_lineblue}];
-    
     self.view.backgroundColor = [UIColor getColor:@"#f5f5f5"];
+    
     // 取出导航栏的线
 //    if ([self.navigationController.navigationBar respondsToSelector:@selector( setBackgroundImage:forBarMetrics:)]){
 //        NSArray *list=self.navigationController.navigationBar.subviews;
@@ -34,7 +32,6 @@
 //    }
     
     
-//    [self.navigationController.navigationBar alphaNavigationBarView:[KColorMainGreen colorWithAlphaComponent:1]];
     self.navigationController.navigationBar.barTintColor = KColorMainGreen;
     self.navigationController.interactivePopGestureRecognizer.delegate = (id)self ;
     
@@ -59,15 +56,20 @@
         [menuBtn addTarget:self action:@selector(dissmissVC) forControlEvents:UIControlEventTouchUpInside];
         self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:menuBtn];
     }
-    //关闭侧滑
+    //关闭  侧滑打开侧边栏
     [self setPanEnabled:NO];
+    //右侧按钮 返回主界面
+    UIButton *right = [UIButton buttonWithType:UIButtonTypeCustom];
+    right.frame = CGRectMake(0, 0, 45, 45);
+    [right setImage:[UIImage imageNamed:@"ld-you"] forState:UIControlStateNormal];
+    right.imageEdgeInsets = UIEdgeInsetsMake(0, 0, 0, 0);
+    [right addTarget:self action:@selector(backToHome) forControlEvents:UIControlEventTouchUpInside];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:right];
     
 }
 //重写self.view的方法，开始点击
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
 
-    UITouch *touch = [touches anyObject];
-//    NSLog(@"touch = %@",touch.view);
     //重写方法的时候要注意一个问题
     [super touchesBegan:touches withEvent:event];
     //结束编辑，隐藏键盘
@@ -80,7 +82,7 @@
     [self.navigationController  popViewControllerAnimated:YES];
 }
 
-//打开侧边栏
+//返回到 主界面
 - (void) dissmissVC
 {
     [self dismissViewControllerAnimated:YES completion:nil];
@@ -92,13 +94,14 @@
     AppDelegate *tempAppDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     [tempAppDelegate.LeftSlideVC setPanEnabled:pan];
 }
-//
-//- (void)viewWillAppear:(BOOL)animated
-//{
-//    [super viewWillAppear:animated];
-//    NSLog(@"viewWillAppear");
-//    AppDelegate *tempAppDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
-//    [tempAppDelegate.LeftSlideVC setPanEnabled:YES];
-//}
+//跳转到主界面
+-(void)backToHome{
+    AppDelegate *tempAppDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+    //回到首页界面
+    tempAppDelegate.tabbarVC.selectedIndex = 2;
+    [tempAppDelegate.LeftSlideVC closeLeftViewWithAnimated:NO];
+    [self dismissViewControllerAnimated:YES completion:nil];
+    
+}
 
 @end
