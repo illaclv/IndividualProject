@@ -225,6 +225,7 @@
 		CFC391181D9BCDF500BB0911 /* YellowPagesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC391171D9BCDF500BB0911 /* YellowPagesViewController.m */; };
 		CFC3911F1D9BCF6800BB0911 /* LeaveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC3911E1D9BCF6800BB0911 /* LeaveViewController.m */; };
 		CFC62F8D1D94DB2600AEF388 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC62F8C1D94DB2600AEF388 /* LoginViewController.m */; };
+		CFD043DA1DACE8C40079E30F /* SchoolTimetableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFD043D91DACE8C40079E30F /* SchoolTimetableViewController.m */; };
 		CFD7D8331D87AFF000FE627C /* HomePageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CFD7D8321D87AFF000FE627C /* HomePageModel.m */; };
 		CFF031C31D9668E90058F362 /* NewsDetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CFF031C21D9668E90058F362 /* NewsDetailModel.m */; };
 /* End PBXBuildFile section */
@@ -657,6 +658,8 @@
 		CFC3911E1D9BCF6800BB0911 /* LeaveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeaveViewController.m; sourceTree = "<group>"; };
 		CFC62F8B1D94DB2600AEF388 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		CFC62F8C1D94DB2600AEF388 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		CFD043D81DACE8C40079E30F /* SchoolTimetableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SchoolTimetableViewController.h; sourceTree = "<group>"; };
+		CFD043D91DACE8C40079E30F /* SchoolTimetableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SchoolTimetableViewController.m; sourceTree = "<group>"; };
 		CFD7D8311D87AFF000FE627C /* HomePageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePageModel.h; sourceTree = "<group>"; };
 		CFD7D8321D87AFF000FE627C /* HomePageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomePageModel.m; sourceTree = "<group>"; };
 		CFE89DAC1D8250110003D006 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
@@ -998,6 +1001,7 @@
 		CF1CFA221D8256E100FFF45E /* LeftSIdeViewController */ = {
 			isa = PBXGroup;
 			children = (
+				CFD043D41DACE7F80079E30F /* 查询课表 */,
 				CFC391191D9BCF5000BB0911 /* Leave */,
 				CFC390DA1D9BCD2D00BB0911 /* Calendar */,
 				CFC390DE1D9BCD2D00BB0911 /* Certificate */,
@@ -1986,6 +1990,39 @@
 			path = LoginViewController;
 			sourceTree = "<group>";
 		};
+		CFD043D41DACE7F80079E30F /* 查询课表 */ = {
+			isa = PBXGroup;
+			children = (
+				CFD043D71DACE7F80079E30F /* ViewController */,
+				CFD043D51DACE7F80079E30F /* Model */,
+				CFD043D61DACE7F80079E30F /* View */,
+			);
+			path = "查询课表";
+			sourceTree = "<group>";
+		};
+		CFD043D51DACE7F80079E30F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CFD043D61DACE7F80079E30F /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CFD043D71DACE7F80079E30F /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CFD043D81DACE8C40079E30F /* SchoolTimetableViewController.h */,
+				CFD043D91DACE8C40079E30F /* SchoolTimetableViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 		CFE89DAA1D824FE80003D006 /* AppDelegate */ = {
 			isa = PBXGroup;
 			children = (
@@ -2209,6 +2246,7 @@
 				CF2841DC1D824D080008BA3C /* README.md in Sources */,
 				CF28424C1D824D140008BA3C /* MJRefreshConst.m in Sources */,
 				04A6E8381D82858F0056E8CE /* MASViewConstraint.m in Sources */,
+				CFD043DA1DACE8C40079E30F /* SchoolTimetableViewController.m in Sources */,
 				04A6E8F91D8285A40056E8CE /* NSString+YYAdd.m in Sources */,
 				04A6E9011D8285A40056E8CE /* UIColor+YYAdd.m in Sources */,
 				CF2842511D824D140008BA3C /* README.md in Sources */,

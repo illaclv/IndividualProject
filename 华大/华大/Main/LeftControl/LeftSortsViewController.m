@@ -33,6 +33,8 @@
 #import "StudentsQueryViewController.h"
 //请假
 #import "LeaveViewController.h"
+//查询课表
+#import "SchoolTimetableViewController.h"
 
 
 
@@ -76,7 +78,7 @@
         self.enterButton = [self addButonWithIndex:1 title:@"登陆" imageName:@"iconfont-denglu"tag:101] ;
     }else{
         //已登陆
-        self.enterButton = [self addButonWithIndex:1 title:@"退出" imageName:@"iconfont-denglu"tag:103] ;
+        self.enterButton = [self addButonWithIndex:1 title:@"退出" imageName:@"sigout"tag:103] ;
         
     }
 
@@ -113,7 +115,7 @@
         self.enterButton = [self addButonWithIndex:1 title:@"登陆" imageName:@"iconfont-denglu"tag:101] ;
     }else{
         //已登陆
-        self.enterButton = [self addButonWithIndex:1 title:@"退出" imageName:@"iconfont-denglu"tag:103] ;
+        self.enterButton = [self addButonWithIndex:1 title:@"退出" imageName:@"sigout"tag:103] ;
 
     }
 
@@ -221,6 +223,13 @@
         } if([self.mainDataArray[indexPath.row] isEqualToString:@"请假"]){
             //跳转新请假界面
             LeaveViewController *test=[[LeaveViewController alloc]init];
+            UINavigationController *nacv = [[UINavigationController alloc]initWithRootViewController:test];
+            nacv.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
+            [self presentViewController:nacv animated:YES completion:nil];
+        }
+        if([self.mainDataArray[indexPath.row] isEqualToString:@"查询课表"]){
+            //跳转新请假界面
+            SchoolTimetableViewController *test=[[SchoolTimetableViewController alloc]init];
             UINavigationController *nacv = [[UINavigationController alloc]initWithRootViewController:test];
             nacv.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
             [self presentViewController:nacv animated:YES completion:nil];

@@ -16,7 +16,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+
+    self.title = @"课表查询";
+    
 }
 
 - (void)didReceiveMemoryWarning {
